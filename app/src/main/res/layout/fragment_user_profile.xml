@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+
+    tools:context=".Profile_info">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="521dp"
+        android:text="PROFILE"
+        android:textColor="#F00"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="440dp"
+        android:text="Name"
+        android:textColor="#FAF103"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="233dp"
+        android:text="ID"
+        android:textColor="#FAF103"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="337dp"
+        android:text="Email"
+        android:textColor="#FAF103"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="448dp" />
+
+    <TextView
+        android:id="@+id/PersonID"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="240dp" />
+
+    <TextView
+        android:id="@+id/personEmail"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="338dp" />
+
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_width="279dp"
+        android:layout_height="164dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="36dp" />
+
+</RelativeLayout>

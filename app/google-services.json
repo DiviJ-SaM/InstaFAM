@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "704299293996",
+    "firebase_url": "https://instafam-cda7e.firebaseio.com",
+    "project_id": "instafam-cda7e",
+    "storage_bucket": "instafam-cda7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704299293996:android:06b171e766bc737f7ae089",
+        "android_client_info": {
+          "package_name": "com.example.instafam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704299293996-6u90t6g28omvmh50j7rrv22nsf8ju42q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instafam",
+            "certificate_hash": "969efa3895853d3f5241edcdf55b01bb0ab815f0"
+          }
+        },
+        {
+          "client_id": "704299293996-5qb670h1tahagafruhc3mja9f9lemf6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtwiQBWa9yzzhksuprrKGWCcJx6vRziXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704299293996-5qb670h1tahagafruhc3mja9f9lemf6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

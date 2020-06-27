@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/download"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <Button
+        android:id="@+id/Profilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="75dp"
+        android:text="Profile" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="14dp"
+        android:text="SIGN OUT" />
+
+    <ImageView
+        android:id="@+id/DisplayPic"
+        android:layout_width="197dp"
+        android:layout_height="155dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="343dp" />
+
+    <Button
+        android:id="@+id/emailAuthBtn"
+        android:layout_width="172dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="148dp"
+        android:text="Sign Up With Email" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="150dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="150dp"
+        android:text="OR"
+        android:textColor="#FFFBFB"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="285dp"
+        android:ems="10"
+        android:backgroundTint="@color/colorAccent"
+        android:hint="Email-Id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="61dp"
+        android:text="Button" />
+
+</RelativeLayout>
