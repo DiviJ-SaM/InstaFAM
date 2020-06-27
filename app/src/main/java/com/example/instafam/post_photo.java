@@ -125,6 +125,7 @@ public class post_photo extends AppCompatActivity {
                                     dataObj.put("posts", postData);
                                     photos.add(dataObj);
                                 }
+                                Toast.makeText(this, "Photo Posted", Toast.LENGTH_SHORT).show();
                             }
                         });
                     });
