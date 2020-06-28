@@ -89,8 +89,8 @@
         android:layout_height="72dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-28dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="22dp"
         android:fontFamily="casual"
         android:textColor="@color/colorPrimary"
         android:textSize="23dp" />

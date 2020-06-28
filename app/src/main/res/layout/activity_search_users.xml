@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search_users">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/userView"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/searchField"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="103dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchField"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="116dp"
+        android:layout_toStartOf="@+id/userView"
+        android:text="Username: " />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchField"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="62dp"
+        android:layout_toStartOf="@+id/emailView"
+        android:text="Email: " />
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="275dp"
+        android:layout_toStartOf="@+id/searchButton"
+        android:ems="10"
+        android:hint="Enter Search"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="274dp"
+        android:text="Find"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="253dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/searchField"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="39dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="247dp"
+        android:text="Example Users:  Rey Mysterio" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="221dp"
+        android:text="john legend" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="199dp"
+        android:text="divijsam" />
+
+    <TextView
+        android:id="@+id/User_photo"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="189dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="191dp"
+        android:text="Photos by: " />
+
+</RelativeLayout>

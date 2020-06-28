@@ -75,7 +75,7 @@ public class Login_Activity extends AppCompatActivity {
         btnSignOut = findViewById(R.id.sign_out_button);
         ProfButton = findViewById(R.id.Profilebutton);
         emailAuthbtn = findViewById(R.id.emailAuthBtn);
-         or = findViewById(R.id.textView5);
+        or = findViewById(R.id.textView5);
         DisplayPic = findViewById(R.id.DisplayPic);
         loginBtn = findViewById(R.id.loginBtn);
         emailField = findViewById(R.id.emailField);
@@ -93,7 +93,7 @@ public class Login_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               LoginWithEmailPassword();
+                LoginWithEmailPassword();
             }
         });
 
@@ -109,12 +109,10 @@ public class Login_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signIn();
-
-
-
-
-
-
+                emailField.setText("");
+                emailField.setVisibility(View.INVISIBLE);
+                passField.setText("");
+                passField.setVisibility(View.INVISIBLE);
             }
         });
         btnSignOut.setOnClickListener(new View.OnClickListener() {
@@ -126,18 +124,20 @@ public class Login_Activity extends AppCompatActivity {
                 signInButton.setVisibility(View.VISIBLE);
                 ProfButton.setVisibility(View.INVISIBLE);
                 emailAuthbtn.setVisibility(View.VISIBLE);
+                emailField.setVisibility(View.VISIBLE);
+                passField.setVisibility(View.VISIBLE);
                 DisplayPic.setImageURI(Uri.EMPTY);
-
+                loginBtn.setVisibility(View.VISIBLE);
             }
         });
-        loginBtn.setOnClickListener( event -> {
+        loginBtn.setOnClickListener(event -> {
             String email = emailField.getText().toString();
             String pass = passField.getText().toString();
             authenticator.authenticate(email, pass, result -> {
                 if (result == null) {
                     Toast.makeText(this, "You suddenly died!", Toast.LENGTH_SHORT).show();
                 } else {
-                    startActivity(new Intent(this, Homescreen_UI.class) );
+                    startActivity(new Intent(this, Profil_login.class));
                     Toast.makeText(this, String.format("You have logged in as %s!", result.getUser().getEmail()), Toast.LENGTH_SHORT).show();
                 }
             });
@@ -222,6 +222,8 @@ public class Login_Activity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             profilePic();
                             btnSignOut.setVisibility(View.VISIBLE);
+                            emailField.setVisibility(View.INVISIBLE);
+                            passField.setVisibility(View.INVISIBLE);
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
@@ -244,6 +246,9 @@ public class Login_Activity extends AppCompatActivity {
         ProfButton.setVisibility(View.VISIBLE);
         or.setVisibility(View.INVISIBLE);
         emailAuthbtn.setVisibility(View.INVISIBLE);
+        emailField.setVisibility(View.INVISIBLE);
+        passField.setVisibility(View.INVISIBLE);
+        loginBtn.setVisibility(View.INVISIBLE);
 
         account = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
         if (account != null) {
@@ -282,11 +287,11 @@ public class Login_Activity extends AppCompatActivity {
 
         }
     }
-    private void LoginWithEmailPassword(){
+
+    private void LoginWithEmailPassword() {
         Intent intent = new Intent(this, login_email_password.class);
         startActivity(intent);
     }
-
 
 
 }

@@ -47,14 +47,14 @@ public class post_photo extends AppCompatActivity {
     StorageReference storageReference;
 
 
-    ImageView close, Image_added;
+    ImageView Image_added;
     TextView post;
     EditText description;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_photo);
-        close = findViewById(R.id.close);
+
         Image_added = findViewById(R.id.image_added);
         post = findViewById(R.id.post);
         description = findViewById(R.id.description);
@@ -104,7 +104,7 @@ public class post_photo extends AppCompatActivity {
                             if (listener.isSuccessful()) {
                                 QuerySnapshot resSnap = listener1.getResult();
                                 Optional<DocumentSnapshot> doc = resSnap.getDocuments().stream()
-                                        .filter(a -> a.get("username").equals(FirebaseAuth.getInstance().getCurrentUser().getUid())).findFirst();
+                                        .filter(a -> a.get("email").equals(FirebaseAuth.getInstance().getCurrentUser().getEmail())).findFirst();
 
                                 if (doc.isPresent()) {
                                     Map<String, Map<String, String>> photoMap = (Map<String, Map<String, String>>) doc.get().get("posts");
@@ -116,13 +116,13 @@ public class post_photo extends AppCompatActivity {
                                     photos.document(doc.get().getId()).update("posts", photoMap);
                                 } else {
                                     Map<String, Object> dataObj = new HashMap<>();
-                                    dataObj.put("username", FirebaseAuth.getInstance().getCurrentUser().getUid());
+                                    dataObj.put("email", FirebaseAuth.getInstance().getCurrentUser().getEmail());
                                     Map<String, Map<String, String>> photoMap = new HashMap<>();
                                     Map<String, String> postData = new HashMap<>();
                                     postData.put("photo_url", myUrl);
                                     postData.put("description", description.getText().toString());
                                     photoMap.put(postID.toString(), postData);
-                                    dataObj.put("posts", postData);
+                                    dataObj.put("posts", photoMap);
                                     photos.add(dataObj);
                                 }
                                 Toast.makeText(this, "Photo Posted", Toast.LENGTH_SHORT).show();
