@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="75dp"
-        android:text="Profile" />
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="71dp"
+        android:text="Google Profile" />
 
     <Button
         android:id="@+id/sign_out_button"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="9dp"
         android:text="SIGN OUT" />
 
     <ImageView
@@ -100,8 +100,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="61dp"
-        android:text="Button" />
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="217dp"
+        android:text="LOGIN" />
 
 </RelativeLayout>
