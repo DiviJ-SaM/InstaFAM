@@ -104,4 +104,14 @@
         android:layout_marginBottom="217dp"
         android:text="LOGIN" />
 
+    <ImageView
+        android:id="@+id/Instafam_image"
+        android:layout_width="235dp"
+        android:layout_height="196dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="339dp"
+        app:srcCompat="@drawable/instafam" />
+
 </RelativeLayout>

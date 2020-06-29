@@ -53,9 +53,10 @@ public class Login_Activity extends AppCompatActivity {
     private Button ProfButton;
     private Button emailAuthbtn;
     private Button loginBtn;
-    TextView or;
+    private TextView or;
     private EditText emailField;
     private EditText passField;
+    private ImageView logo;
 
     private GoogleSignInAccount account;
 
@@ -75,6 +76,7 @@ public class Login_Activity extends AppCompatActivity {
         btnSignOut = findViewById(R.id.sign_out_button);
         ProfButton = findViewById(R.id.Profilebutton);
         emailAuthbtn = findViewById(R.id.emailAuthBtn);
+        logo = findViewById(R.id.Instafam_image);
         or = findViewById(R.id.textView5);
         DisplayPic = findViewById(R.id.DisplayPic);
         loginBtn = findViewById(R.id.loginBtn);
@@ -113,6 +115,7 @@ public class Login_Activity extends AppCompatActivity {
                 emailField.setVisibility(View.INVISIBLE);
                 passField.setText("");
                 passField.setVisibility(View.INVISIBLE);
+                logo.setVisibility(View.INVISIBLE);
             }
         });
         btnSignOut.setOnClickListener(new View.OnClickListener() {
@@ -127,6 +130,7 @@ public class Login_Activity extends AppCompatActivity {
                 emailField.setVisibility(View.VISIBLE);
                 passField.setVisibility(View.VISIBLE);
                 DisplayPic.setImageURI(Uri.EMPTY);
+                logo.setVisibility(View.VISIBLE);
                 loginBtn.setVisibility(View.VISIBLE);
             }
         });
