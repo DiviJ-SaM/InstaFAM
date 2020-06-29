@@ -139,7 +139,7 @@ public class Login_Activity extends AppCompatActivity {
             String pass = passField.getText().toString();
             authenticator.authenticate(email, pass, result -> {
                 if (result == null) {
-                    Toast.makeText(this, "You suddenly died!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Check Your Credentials!", Toast.LENGTH_SHORT).show();
                 } else {
                     startActivity(new Intent(this, Profil_login.class));
                     Toast.makeText(this, String.format("You have logged in as %s!", result.getUser().getEmail()), Toast.LENGTH_SHORT).show();

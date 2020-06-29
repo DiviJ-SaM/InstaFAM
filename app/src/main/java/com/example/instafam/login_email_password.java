@@ -119,7 +119,7 @@ public class login_email_password extends AppCompatActivity {
         });
     }
     private void open_userprofile(){
-        startActivity(new Intent(login_email_password.this,Homescreen_UI.class));
+        startActivity(new Intent(login_email_password.this,Profil_login.class));
     }
 
 }
